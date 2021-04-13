@@ -14,14 +14,19 @@ public class Conta {
 		if (this.saldo >= valor) {
 			this.saldo -= valor;
 			return true;
-		} else {
-			return false;
 		}
+			
+		return false;
 	}
 	
-	public void transfere(double valor, Conta conta) {
-		conta.saldo += valor;
-		this.saldo -= valor;
+	public boolean transfere(double valor, Conta conta) {
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+			conta.deposita(valor);
+			return true;
+		}
+			
+		return false;
 	}
 
 }
