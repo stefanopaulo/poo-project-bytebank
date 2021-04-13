@@ -16,6 +16,15 @@ public class CriaConta {
 		c2.saldo = 50;
 		System.out.println("Saldo da segunda conta: " + c2.saldo);
 		
+		if (c1 == c2) {
+			System.out.println("verdade");
+		} else {
+			System.out.println("falso");
+		}
+		
+		System.out.println(c1);
+		System.out.println(c2);
+		
 	}
 
 }
