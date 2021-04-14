@@ -2,7 +2,7 @@
 public class TestaMetodo {
 	
 	public static void main(String[] args) {
-		
+		/*
 		Conta conta = new Conta();
 		
 		conta.deposita(500);
@@ -19,7 +19,7 @@ public class TestaMetodo {
 		
 		boolean t = conta2.saca(50);
 		System.out.println("saldo da conta 2: " + conta2.saldo + " : " + t);
-		
+		*/
 	}
 	
 }

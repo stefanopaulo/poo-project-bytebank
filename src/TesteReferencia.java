@@ -2,7 +2,7 @@
 public class TesteReferencia {
 
 	public static void main(String[] args) {
-
+		/*
 		Conta c1 = new Conta();
 		
 		c1.saldo = 300;
@@ -23,7 +23,7 @@ public class TesteReferencia {
 		
 		System.out.println(c1);
 		System.out.println(c2);
-		
+		*/
 	}
 
 }
