@@ -3,13 +3,10 @@ public class TestaBanco {
 
 	public static void main(String[] args) {
 
-		Conta c1 = new Conta();
+		Conta c1 = new Conta(200, 1337, 164);
 		Cliente cl1 = new Cliente();
 				
 		c1.setCliente(cl1);
-		c1.setNumero(1337);
-		c1.setAgencia(146);
-		c1.deposita(100);
 		
 		c1.getCliente().setNome("Paulo Silveira");
 		c1.getCliente().setCpf("222.222.222-22");

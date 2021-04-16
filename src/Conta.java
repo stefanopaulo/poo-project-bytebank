@@ -6,7 +6,18 @@ public class Conta {
 	private int numero;
 	private Cliente titular;
 	
+	public Conta(double saldo, int agencia, int numero) {
+		this.deposita(saldo);
+		this.setAgencia(agencia);
+		this.setNumero(numero);
+	}
+	
 	public void deposita(double valor) {
+		if (valor < 0) {
+			this.saldo = 0.0;
+			return;
+		}
+		
 		this.saldo += valor;
 	}
 	
@@ -34,6 +45,10 @@ public class Conta {
 	}
 	
 	public void setAgencia(int agencia) {
+		if (agencia <= 0) {
+			System.out.println("Número da agência inválido");
+			return;
+		}
 		this.agencia = agencia;
 	}
 	
@@ -42,6 +57,10 @@ public class Conta {
 	}
 	
 	public void setNumero(int numero) {
+		if (numero <= 0) {
+			System.out.println("Número da conta inválido");
+			return;
+		}
 		this.numero = numero;
 	}
 	
